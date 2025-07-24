@@ -20,9 +20,12 @@ public class Zoo {
                 System.out.println(animal.getName() +  "\t" + f.fly()+"\n");
             System.out.println("----------------------------- \n");
             }
-            if (animal instanceof Swimmable ) {
+            else if (animal instanceof Swimmable ) {
                 Swimmable s = (Swimmable) animal;
                 System.out.println(animal.getName() +  "\t" + s.swim()+"\n");
+            System.out.println("----------------------------- \n");
+            }else {
+                System.out.println(animal.getName() +  "\t Walk\n");
             System.out.println("----------------------------- \n");
             }
         }
